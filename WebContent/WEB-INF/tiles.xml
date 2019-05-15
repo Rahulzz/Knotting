@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition name="home.definition" template="/WEB-INF/jsp/layouts/home-layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" cascade="true" />
+		<put-attribute name="include" value="/WEB-INF/jsp/include.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" cascade="true" />
+		<put-attribute name="overlay" value="/WEB-INF/jsp/overlay-content.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/message-content.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="user.definition" template="/WEB-INF/jsp/layouts/user-layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="include" value="/WEB-INF/jsp/include.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" cascade="true" />
+		<put-attribute name="overlay" value="/WEB-INF/jsp/overlay-content.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/message-content.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="vendor.definition" template="/WEB-INF/jsp/layouts/vendor-layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="include" value="/WEB-INF/jsp/include.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" cascade="true" />
+		<put-attribute name="overlay" value="/WEB-INF/jsp/overlay-content.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/message-content.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="hidden.bg.definition" template="/WEB-INF/jsp/layouts/hidden-bg-layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" cascade="true" />
+		<put-attribute name="include" value="/WEB-INF/jsp/include.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" cascade="true" />
+		<put-attribute name="overlay" value="/WEB-INF/jsp/overlay-content.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/message-content.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="support.definition" template="/WEB-INF/jsp/layouts/support-layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/support/supportMenu.jsp" cascade="true" />
+		<put-attribute name="include" value="/WEB-INF/jsp/include.jsp" />
+		<put-attribute name="message" value="/WEB-INF/jsp/message-content.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="home.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+
+	<definition name="profile" extends="hidden.bg.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/profile.jsp" />
+	</definition>
+
+	<definition name="editService" extends="hidden.bg.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/editService.jsp" />
+	</definition>
+
+	<definition name="viewService" extends="hidden.bg.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/viewService.jsp" />
+	</definition>
+
+	<definition name="proceedToPay" extends="vendor.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/proceedToPay.jsp" />
+	</definition>
+
+	<definition name="paymentFailure" extends="vendor.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/paymentFailure.jsp" />
+	</definition>
+
+	<definition name="result" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/result.jsp" />
+	</definition>
+
+	<definition name="serviceResult" extends="home.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/serviceResult.jsp" />
+	</definition>
+
+	<definition name="wanderingUser" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/wanderingUser.jsp" />
+	</definition>
+
+	<definition name="vendorService" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/vendorService.jsp" />
+	</definition>
+
+	<definition name="privacy" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/privacy.jsp" />
+	</definition>
+
+	<definition name="terms" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/terms.jsp" />
+	</definition>
+
+	<definition name="contact" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp" />
+	</definition>
+
+	<definition name="team" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/team.jsp" />
+	</definition>
+
+	<definition name="emergency" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/emergency.jsp" />
+	</definition>
+
+	<definition name="rateCard" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/rateCard.jsp" />
+	</definition>
+
+	<definition name="supportHome" extends="support.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/support/supportHome.jsp" />
+	</definition>
+
+	<definition name="supportEntries" extends="support.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/support/supportEntries.jsp" />
+	</definition>
+
+	<definition name="supportEntryDetails" extends="support.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/support/supportEntryDetails.jsp" />
+	</definition>
+
+	<definition name="supportCoupons" extends="support.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/support/supportCoupons.jsp" />
+	</definition>
+
+	<definition name="supportMembers" extends="support.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/support/supportMembers.jsp" />
+	</definition>
+
+	<definition name="verifyEmail" extends="user.definition">
+		<put-attribute name="body" value="/WEB-INF/jsp/verifyEmail.jsp" />
+	</definition>
+
+</tiles-definitions>

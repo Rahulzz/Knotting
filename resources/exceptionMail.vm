@@ -1,0 +1,7 @@
+<html>
+<body>
+User Id: ${userId}<br><br>
+User Type: ${userType}<br><br>
+Exception Details: <br><br>${exceptionDetails}
+</body>
+</html>

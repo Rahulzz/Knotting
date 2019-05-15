@@ -1,0 +1,101 @@
+<html>
+<head>
+<style type="text/css" />
+* {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+body {
+	margin: 0px;
+}
+
+.joy {
+	color: #6ac045;
+	font-family: Arial;
+	font-size: 1.7em;
+}
+table.outer-table {
+	width: 100% !important;
+	height: 100% !important;
+	margin: 50px 0px;
+	padding: 0;
+	border: none;
+}
+.wrapper {
+	text-align: center;
+	vertical-align: top;
+}
+table.content-table {
+	background-color:#151718;
+	width:800px;
+	margin:auto;
+}
+.header-row td {
+	padding: 70px 0px 30px;
+	text-align: center;
+}
+.header-row img {
+	height: 30px;
+}
+.footer-row td {
+	padding: 30px 0px 70px;
+	text-align: center;
+	color: #696e70;
+	font-family: Arial;
+	font-size: 0.75em;
+}
+.content-row td {
+	padding: 50px 0px;
+	text-align: center;
+}
+.content-row td.verify-email {
+	padding: 50px 100px;
+	font-family: Lucida Sans;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: #FFFFFF;
+}
+.content-row .receipt-box {
+	border-top: 1px solid #373839;
+	width: 100%;
+	color: #FFFFFF;
+}
+.content-row .receipt-box .final-price {
+	font-size: 1.2em;
+	color: #6ac045;
+}
+.content-row .receipt-box .coupon-data {
+	font-family: Trebuchet MS;
+	font-size: 0.8em;
+	color: #7f8283;
+}
+.content-row td.verify-email a {
+	background-color: #6ac045;
+	padding: 10px 20px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+<table class="outer-table"><tr><td class="wrapper">
+<table class="content-table">
+<tr class="header-row">
+<td><img src="https://storage.googleapis.com/knotting/images/misc/knotting_logo.png" /></td>
+</tr>
+<tr class="content-row">
+<td class="verify-email">
+<span class="joy">Congrats</span><br><br><br>${entryName} has cleared the verification process.<br><br>Users will now be able to see your entry. In case we send you the details of a user, do contact them at the earliest. Remember, prompt response is always the key to success.<br><br>Let's work and grow together
+</td>
+</tr>
+<tr class="footer-row">
+<td>we do not monitor this mailbox. kindly do not reply</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
